@@ -7,8 +7,17 @@
  * @homepage https://github.com/georapbox/webpack-library-starter-kit#readme
  * @repository git+https://github.com/georapbox/webpack-library-starter-kit.git
  */
-module.exports =
-/******/ (function(modules) { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define("SessionSuggester", [], factory);
+	else if(typeof exports === 'object')
+		exports["SessionSuggester"] = factory();
+	else
+		root["SessionSuggester"] = factory();
+})((typeof self !== 'undefined' ? self : this), function() {
+return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -13189,4 +13198,5 @@ var SessionSuggester = /** @class */ (function () {
 /***/ })
 
 /******/ });
+});
 //# sourceMappingURL=SessionSuggester.js.map
