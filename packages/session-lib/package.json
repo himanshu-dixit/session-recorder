@@ -18,8 +18,7 @@
     "dev:umd": "webpack --progress --colors --watch --mode=development --output-library-target=umd",
     "dev:commonjs": "webpack --progress --colors --watch --mode=development --output-library-target=commonjs2",
     "dev": "npm-run-all --parallel dev:*",
-    "clean": "rimraf dist lib coverage",
-    "prepare": "npm-run-all clean build"
+    "clean": "rimraf dist lib coverage"
   },
   "repository": {
     "type": "git",
